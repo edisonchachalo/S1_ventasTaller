@@ -74,7 +74,10 @@ int main() {
                 }
 
             } while (val != 1 || cantidad < 1 || cantidad > stock);
-            
+            venta = cantidad * precio;
+            printf("El valor de la venta actual es; %f\n",venta);
+            stock-=cantidad;
+            total_ganancias+=venta;
 
             break;
 
